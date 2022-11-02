@@ -41,7 +41,7 @@ def show_some(dealer, player):
     print(dealer.cards[1])
 
     print('\nPlayer\'s hand: ')
-    for card in player.hand:
+    for card in player.cards:
         print(card)
 
 
@@ -69,12 +69,12 @@ def player_wins(player, dealer, chips):
 
 def dealer_busts(player, dealer, chips):
     print('BUST Dealer')
-    chips.lose_bet()
+    chips.win_bet()
 
 
 def dealer_wins(player, dealer, chips):
     print('Dealer wins')
-    chips.win_bet()
+    chips.lose_bet()
 
 
 def push(player, dealer):

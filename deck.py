@@ -1,6 +1,6 @@
 import random
 from data import suits, ranks
-from card import Card
+from card import *
 
 
 class Deck:
